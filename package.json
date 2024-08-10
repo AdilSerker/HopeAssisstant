@@ -1,0 +1,16 @@
+{
+  "name": "hope_assistant",
+  "version": "1.0.0",
+  "description": "Assistance Api",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "openai": "^4.53.0",
+    "telegraf": "^4.16.3"
+  }
+}
