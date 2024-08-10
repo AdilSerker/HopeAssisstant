@@ -43,6 +43,7 @@ export class Application {
     }
 
     async start() {
-        await bot.launch();
+        await bot.launch()
+        console.log('Bot has been started');
     }
 }
