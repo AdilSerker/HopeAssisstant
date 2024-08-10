@@ -70,7 +70,7 @@ export class Assistant {
                     clearInterval(timer);
                 }
 
-                if (response.event === "thread.run.completed") {
+                if (response.event === "thread.run.completed" || response.event === "thread.run.failed") {
                     clearInterval(timer);
                 }
             }
