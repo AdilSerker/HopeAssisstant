@@ -45,7 +45,7 @@ export class Assistant {
                 if (response.event === "thread.message.delta") {
                     if (!messages) {
                         text = response.data.delta.content[0].text.value;
-                        messages = await bot.telegram.sendMessage(userId, text);
+                        messages = await bot.telegram.sendMessage(userId, text, { parse_mode: 'MarkdownV2' });
                         lastSentText = text;
                     } else {
                         text += response.data.delta.content[0].text.value;
